@@ -51,15 +51,18 @@
         }
         .image-gallery {
           display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
+          flex-direction: column;
+          gap: 40px; /* space between images */
+          padding: 40px;
           background-color: #000;
         }
+
         .image-gallery img {
-          max-width: 100%;
+          width: 100%;
+          height: auto;
           max-height: 90vh;
           object-fit: contain;
+          display: block;
         }
     </style>
 </head>
