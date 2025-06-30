@@ -52,18 +52,22 @@
         .image-gallery {
           display: flex;
           flex-direction: column;
-          gap: 40px;        /* Space between images */
+          gap: 40px;
           margin: 0;
           padding: 0;
+          background-color: #000;
         }
-
+        
         .image-gallery img {
-          width: 100vw;     /* Use full viewport width */
+          max-width: 100%;
+          max-height: 100vh;
+          width: auto;
           height: auto;
+          margin: 0 auto;
+          object-fit: contain;
           display: block;
-          object-fit: cover;
         }
-
+    
     </style>
 </head>
 <body>
